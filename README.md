@@ -17,7 +17,8 @@ Click the Wireshark icon or press Ctrl+E.
 Generate Traffic:Browse a website, ping an IP, or run curl ifconfig.me.
 
 Stop Capture:Click the red square or press Ctrl+E again.
-![image alt](
+![image alt](https://github.com/Krishna-kali/Network-traffic-using-Wireshark-/blob/d1624ed1c8fde5a5288924a00c86218225d10ea9/Screenshot_2025-08-11-21-40-18-010.png)
+
 3. Basic Analysis Techniques
 A. Filter Traffic
 ip.addr == 192.168.1.100 -	Traffic to/from a specific IP.
@@ -27,3 +28,15 @@ icmp - 	Ping/ICMP packets.
 http -	HTTP requests/responses.
 tcp.flags.syn == 1 -	TCP connection requests (SYN).
 dns -	All DNS traffic.
+
+.Apply Filters: Type in the filter bar → press Enter.
+.Save Filters: Right-click → Save Filter.
+
+B. Follow TCP Stream
+Right-click a TCP packet (e.g., HTTP).
+
+Select Follow → TCP Stream.
+View full conversation (e.g., HTTP headers, API calls).
+
+C. Colorize Traffic
+Go to View → Coloring Rules to highlight critical traffic (e.g., errors in red).
